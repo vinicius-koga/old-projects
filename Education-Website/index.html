@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>EducaçãoONE</title>
+      <link rel="stylesheet" href="assets/css/bootstrap.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="shortcut icon" href="assets/images/logo.svg" />
+   </head>
+   <body>
+      <!-- YELLOW HEADER -->
+      <header class="bg-primary">
+         <div class="container p-2 d-flex">
+            <div class="d-none d-lg-block">
+               <img src="assets/images/pin.svg" alt="pin icon" />
+               Rua Heitor Penteado, 1200 - São Paulo
+            </div>
+            <div class="d-none d-md-block ms-lg-5">
+               <img src="assets/images/letter.svg" alt="letter icon" />
+               contato@educacaoone.com.br
+            </div>
+            <div class="mx-auto ms-md-auto me-md-0 socialIcons">
+               <a href="#">
+                  <img
+                     src="assets/images/facebook.svg"
+                     alt="facebook"
+                     style="cursor: pointer"
+                  />
+               </a>
+               <a href="#">
+                  <img
+                     src="assets/images/pinterest.svg"
+                     alt="pinterest"
+                     style="cursor: pointer"
+                  />
+               </a>
+               <a href="#">
+                  <img
+                     src="assets/images/twitter.svg"
+                     alt="twitter"
+                     style="cursor: pointer"
+                  />
+               </a>
+               <a href="#">
+                  <img
+                     src="assets/images/instagram.svg"
+                     alt="instagram"
+                     style="cursor: pointer"
+                  />
+               </a>
+            </div>
+         </div>
+      </header>
+
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-md p-3">
+         <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+               <img
+                  src="assets/images/logo.svg"
+                  alt="logo"
+                  style="height: 40px"
+               />
+               <h3 class="lead ps-2 mb-0">EducaçãoONE</h3>
+            </a>
+
+            <button
+               class="navbar-toggler shadow-none"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-0 me-3 mt-2 mt-md-0">
+                  <li class="nav-item mx-1 mx-lg-3">
+                     <a
+                        class="nav-link fw-bold selected"
+                        href="#"
+                        style="font-size: 0.85rem"
+                        >Início</a
+                     >
+                  </li>
+                  <li class="nav-item mx-1 mx-lg-3">
+                     <a
+                        class="nav-link fw-bold"
+                        href="#"
+                        style="font-size: 0.85rem"
+                        >Sobre</a
+                     >
+                  </li>
+                  <li class="nav-item mx-1 mx-lg-3">
+                     <a
+                        class="nav-link fw-bold"
+                        href="#"
+                        style="font-size: 0.85rem"
+                        >Cursos</a
+                     >
+                  </li>
+                  <li class="nav-item mx-1 mx-lg-3">
+                     <a
+                        class="nav-link fw-bold"
+                        href="#"
+                        style="font-size: 0.85rem"
+                        >Contato</a
+                     >
+                  </li>
+               </ul>
+               <div class="mt-3 mt-md-0 d-flex">
+                  <a href="#">
+                     <button class="btn btn-primary">Cadastre-se</button>
+                  </a>
+                  <a href="#">
+                     <button
+                        class="btn btn-light ms-2 d-flex justify-content-center align-items-center h-100"
+                     >
+                        <img src="assets/images/search.svg" alt="search icon" />
+                     </button>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <!-- SECTION BANNER -->
+      <section>
+         <div class="container animated0">
+            <div class="row py-4">
+               <div class="col-lg-7 align-self-center">
+                  <h5>Torne-se um mestre</h5>
+                  <h1>
+                     Aprenda novas habilidades
+                     <br />
+                     Encontre os melhores cursos
+                  </h1>
+                  <div class="mt-5">
+                     <a href="#">
+                        <button
+                           class="btn btn-primary py-2 px-4 me-1"
+                           style="font-size: 0.9rem"
+                        >
+                           Contrate agora
+                        </button>
+                     </a>
+                     <a href="#">
+                        <button
+                           class="btn btn-light py-2 px-4"
+                           style="font-size: 0.9rem"
+                        >
+                           Saiba mais
+                        </button>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <img
+                     src="assets/images/banner.svg"
+                     class="img-fluid my-auto d-none d-lg-block"
+                     alt="main banner"
+                  />
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- SECTION CRONOMETER -->
+      <section>
+         <div class="container">
+            <div
+               class="row bg-darkBlue rounded-4 align-items-center px-3 py-2 cronBox"
+            >
+               <div class="col-2 d-none d-lg-block">
+                  <img
+                     src="assets/images/success.svg"
+                     class="img-fluid"
+                     alt="target image"
+                  />
+               </div>
+               <div class="col-6 col-md-6 col-lg-5 text-white cronLeftText">
+                  <h3>
+                     Próximo curso
+                     <span class="text-primary"
+                        >Python <br />
+                        básico</span
+                     >!
+                  </h3>
+               </div>
+               <div
+                  class="col-6 col-md-6 col-lg-5 text-white cronometer mt-2 mt-xl-4"
+               >
+                  <div
+                     class="row g-0 align-items-center text-center ms-auto"
+                     style="max-width: 400px"
+                  >
+                     <div class="col">
+                        <h1 class="cronDays">11</h1>
+                        <p>Dias</p>
+                     </div>
+                     <div class="col-1 fs-4 equalSign">:</div>
+                     <div class="col">
+                        <h1 class="cronHours">02</h1>
+                        <p>Horas</p>
+                     </div>
+                     <div class="col-1 fs-4 equalSign">:</div>
+                     <div class="col">
+                        <h1 class="cronMinutes">45</h1>
+                        <p>Minutos</p>
+                     </div>
+                     <div class="col-1 fs-4 equalSign">:</div>
+                     <div class="col">
+                        <h1 class="cronSeconds">21</h1>
+                        <p>Segundos</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- SECTION CARDS -->
+      <section class="secCards1 my-4 my-md-5">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 text-center">
+                  <h1 style="color: var(--clr-darkblue)">Cursos em destaque</h1>
+               </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+               <div class="col mt-4">
+                  <a href="#">
+                     <div class="card secCard1 h-100">
+                        <img
+                           src="assets/images/curso01.svg"
+                           alt="Curso - Design de experiência do usuário"
+                        />
+                        <div class="card-body">
+                           <div class="card-title fw-bold mt-2">
+                              Design de experiência do usuário
+                           </div>
+                           <div class="card-text">UX/UI School</div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col mt-4">
+                  <a href="#">
+                     <div class="card secCard1 h-100">
+                        <img
+                           src="assets/images/curso02.svg"
+                           alt="Curso - Design de experiência do usuário"
+                        />
+                        <div class="card-body">
+                           <div class="card-title fw-bold mt-2">
+                              Adobe XD - Prototipação
+                           </div>
+                           <div class="card-text">Adobe</div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col mt-4">
+                  <a href="#">
+                     <div class="card secCard1 h-100">
+                        <img
+                           src="assets/images/curso03.svg"
+                           alt="Curso - Design de experiência do usuário"
+                        />
+                        <div class="card-body">
+                           <div class="card-title fw-bold mt-2">UX e UI</div>
+                           <div class="card-text">PUC University</div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col mt-4 hideSM">
+                  <a href="#">
+                     <div class="card secCard1 h-100">
+                        <img
+                           src="assets/images/curso04.svg"
+                           alt="Curso - Design de experiência do usuário"
+                        />
+                        <div class="card-body">
+                           <div class="card-title fw-bold mt-2">
+                              Ux aplicado na construção de aplicativos
+                           </div>
+                           <div class="card-text">UX/UI School</div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col mt-4 hideSM">
+                  <a href="#">
+                     <div class="card secCard1 h-100">
+                        <img
+                           src="assets/images/curso05.svg"
+                           alt="Curso - Design de experiência do usuário"
+                        />
+                        <div class="card-body">
+                           <div class="card-title fw-bold mt-2">
+                              Pense novamente: Como entender os argumentos que
+                              convencem
+                           </div>
+                           <div class="card-text">Communication Academy</div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col mt-4 hideSM">
+                  <a href="#">
+                     <div class="card secCard1 h-100">
+                        <img
+                           src="assets/images/curso06.svg"
+                           alt="Curso - Design de experiência do usuário"
+                        />
+                        <div class="card-body">
+                           <div class="card-title fw-bold mt-2">
+                              Desenvolvimento de aplicativos android
+                           </div>
+                           <div class="card-text">Developer School</div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col mt-4 hideSM">
+                  <a href="#">
+                     <div class="card secCard1 h-100">
+                        <img
+                           src="assets/images/curso07.svg"
+                           alt="Curso - Design de experiência do usuário"
+                        />
+                        <div class="card-body">
+                           <div class="card-title fw-bold mt-2">
+                              Aprenda a estudar programação
+                           </div>
+                           <div class="card-text">Developer School</div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col mt-4 hideSM">
+                  <a href="#">
+                     <div class="card secCard1 h-100">
+                        <img
+                           src="assets/images/curso08.svg"
+                           alt="Curso - Design de experiência do usuário"
+                        />
+                        <div class="card-body">
+                           <div class="card-title fw-bold mt-2">
+                              Lógica de programação
+                           </div>
+                           <div class="card-text">Developer School</div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="col mt-4 hideSM d-none d-lg-block">
+                  <a href="#">
+                     <div class="card secCard1 h-100">
+                        <img
+                           src="assets/images/curso09.svg"
+                           alt="Curso - Design de experiência do usuário"
+                        />
+                        <div class="card-body">
+                           <div class="card-title fw-bold mt-2">
+                              Logomarcas inovadoras
+                           </div>
+                           <div class="card-text">Adobe</div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- SECTION FEEDBACK -->
+      <section style="margin-top: 80px">
+         <div class="container animated1">
+            <div class="row">
+               <div class="col-12 col-md-6 mb-4 mb-md-0">
+                  <div
+                     class="secFeedback-leftBox position-relative ps-3 pe-3 ps-md-4 pe-md-0"
+                  >
+                     <img
+                        src="assets/images/aluno01-top.svg"
+                        alt="Student Image-top"
+                        class="position-absolute"
+                        style="top: -30px; left: 0; width: 20%"
+                     />
+
+                     <img
+                        src="assets/images/aluno01.svg"
+                        alt="Student Image"
+                        class="img-fluid"
+                        style="width: 100%"
+                     />
+
+                     <div
+                        class="card mx-auto border-0"
+                        style="width: 75%; margin-top: -40px"
+                     >
+                        <div class="card-body text-center">
+                           <div class="card-title h5 fw-bold mb-1">
+                              Juliana Rodriges
+                           </div>
+                           <div class="card-text">Designer Junior</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-12 col-md-6 feedbackBox">
+                  <h1
+                     style="font-size: clamp(2rem, 3.5vw, 3.5rem)"
+                     class="text-dark mb-3"
+                  >
+                     Feedback do nosso <span class="text-primary">aluno</span>
+                  </h1>
+                  <p style="font-size: 0.85rem">
+                     Faça cursos com os melhores instrutores e universidades do
+                     mundo. Os cursos incluem tarefas gravadas com avaliação
+                     automática e revisadas por pares, palestras em vídeo e
+                     fóruns de discussão da comunidade. Ao concluir um curso,
+                     você estará qualificado para receber um Certificado de
+                     curso eletrônico compartilhável por uma pequena taxa.
+                  </p>
+                  <small class="fw-bold text-dark"
+                     >O curso que Juliana Rodrigues fez</small
+                  >
+                  <div class="row mt-3">
+                     <div class="col-3 col-xl-2">
+                        <a href="#">
+                           <img
+                              src="assets/images/aluno01-curso.svg"
+                              alt="Student Class Image"
+                              class="w-100"
+                           />
+                        </a>
+                     </div>
+                     <div class="col my-auto">
+                        <div class="bg-light rounded p-2">
+                           <a href="#" class="classLink">
+                              <small class="text-dark fw-bold d-block"
+                                 >Arte moderna, contemporânea e Design</small
+                              >
+                              <small class="text-secondary"
+                                 >Museu de arte moderna</small
+                              >
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- SECTION NUMBERS -->
+      <section class="mt-5 bg-light py-3">
+         <div class="container bgMap">
+            <div class="row row-cols-2 row-cols-md-4 text-center">
+               <div class="col">
+                  <img
+                     src="assets/images/thumb-cursos.svg"
+                     class="img-fluid"
+                     alt="Thumbnail Cursos"
+                  />
+                  <div class="h1 fw-bold text-dark">768</div>
+                  <div class="text-info fw-bold">Cursos</div>
+               </div>
+               <div class="col">
+                  <img
+                     src="assets/images/thumb-professores.svg"
+                     class="img-fluid"
+                     alt="Thumbnail Cursos"
+                  />
+                  <div class="h1 fw-bold text-dark">120</div>
+                  <div class="text-info fw-bold">Professores</div>
+               </div>
+               <div class="col">
+                  <img
+                     src="assets/images/thumb-estudantes.svg"
+                     class="img-fluid"
+                     alt="Thumbnail Cursos"
+                  />
+                  <div class="h1 fw-bold text-dark">8,300</div>
+                  <div class="text-info fw-bold">Estudantes</div>
+               </div>
+               <div class="col">
+                  <img
+                     src="assets/images/thumb-premios.svg"
+                     class="img-fluid"
+                     alt="Thumbnail Cursos"
+                  />
+                  <h1 class="fw-bold text-dark">32</h1>
+                  <div class="text-info fw-bold">Prêmios</div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- SECTION NEWSLETTER -->
+      <section class="my-5 my-md-3">
+         <div class="container animated2">
+            <div class="row align-items-center">
+               <div class="col-5 d-none d-md-block">
+                  <img
+                     src="assets/images/Recruiting.svg"
+                     class="img-fluid px-5 py-5"
+                     alt="Newsletter Image"
+                  />
+               </div>
+               <div class="col col-md-7 col-lg-6">
+                  <h6 class="text-primary">Se inscreva agora</h6>
+                  <h1
+                     class="text-dark mb-3 fw-bold"
+                     style="font-size: clamp(1.7rem, 3vw, 3rem)"
+                  >
+                     Receba nossa <br />
+                     newsletter
+                  </h1>
+                  <form
+                     class="inputGroup d-flex border rounded p-1"
+                     style="width: 100%"
+                  >
+                     <img
+                        src="assets/images/letter.svg"
+                        class="px-2"
+                        alt="E-mail image"
+                     />
+                     <input
+                        type="email"
+                        class="flex-grow-1 border-0"
+                        placeholder="Digite seu e-mail"
+                        required
+                     />
+                     <button
+                        type="submit"
+                        class="btn btn-warning"
+                        style="min-width: 7.5rem"
+                     >
+                        Inscreva-se agora
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="bg-darkBlue">
+         <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 py-5">
+               <div class="col text-white">
+                  <div class="d-flex align-items-center mb-5">
+                     <img
+                        src="assets/images/logo-white.svg"
+                        class="pe-3"
+                        alt="Logo"
+                     />
+                     <h4 class="text-white fw-lighter">FOR EDUCATION</h4>
+                  </div>
+
+                  <div class="d-flex fw-light mb-3">
+                     <img
+                        src="assets/images/map-white.svg"
+                        class="me-2"
+                        alt="Map image"
+                     />
+                     Rua Heitor Penteado, 1200 - São Paulo
+                  </div>
+
+                  <div class="d-flex fw-light mb-3">
+                     <img
+                        src="assets/images/letter-white.svg"
+                        class="me-2"
+                        alt="Letter image"
+                     />
+                     contato@educacaoone.com.br
+                  </div>
+
+                  <div class="d-flex fw-light mb-3">
+                     <img
+                        src="assets/images/phone-white.svg"
+                        class="me-2"
+                        alt="Letter image"
+                     />
+                     (11) 91234-5678
+                  </div>
+               </div>
+               <div class="col d-none d-md-block">
+                  <div class="row text-white">
+                     <div class="col-6 col-lg-4 px-0">
+                        <h6 class="fw-bolder">Comunidade</h6>
+                        <a href="#">Alunos</a>
+                        <a href="#">Parceiros</a>
+                        <a href="#">Desenvolvedores</a>
+                        <a href="#">Testadores</a>
+                        <a href="#">Tradutores</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Tech Blog</a>
+                        <a href="#">Central de treinamento</a>
+                     </div>
+                     <div class="col-6 col-lg-4 px-0">
+                        <h6 class="fw-bolder">Informação</h6>
+                        <a href="#">Sobre</a>
+                        <a href="#">Preço</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Carreira</a>
+                        <a href="#">Contato</a>
+                     </div>
+                     <div class="d-none d-lg-block col-4 px-0">
+                        <h6 class="fw-bolder">Mais</h6>
+                        <a href="#">Editora</a>
+                        <a href="#">Investidores</a>
+                        <a href="#">Termos</a>
+                        <a href="#">Privacidade</a>
+                        <a href="#">Ajuda</a>
+                        <a href="#">Acessibilidade</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Artigo</a>
+                        <a href="#">Afiliados</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row bg-primary p-4">
+               <div
+                  class="col d-block d-md-flex align-items-center text-center text-md-start"
+               >
+                  <div class="me-auto" style="font-size: 0.85rem">
+                     Template feito por
+                     <a
+                        href="https://www.behance.net/vctung"
+                        class="d-inline"
+                        style="color: rgb(0, 0, 255)"
+                        target="_blank"
+                        >©Tung Vo</a
+                     >
+                     | Desenvolvido por
+                     <a
+                        href="https://github.com/vinicius-koga"
+                        class="d-inline"
+                        style="color: rgb(0, 0, 255)"
+                        target="_blank"
+                        >Vinícius Koga</a
+                     >
+                  </div>
+                  <div
+                     class="socialIcons d-flex pt-3 pt-md-0 justify-content-center justify-content-md-start"
+                  >
+                     <a href="#">
+                        <img
+                           src="assets/images/facebook.svg"
+                           alt="facebook"
+                           style="cursor: pointer"
+                        />
+                     </a>
+                     <a href="#">
+                        <img
+                           src="assets/images/pinterest.svg"
+                           alt="pinterest"
+                           style="cursor: pointer"
+                        />
+                     </a>
+                     <a href="#">
+                        <img
+                           src="assets/images/twitter.svg"
+                           alt="twitter"
+                           style="cursor: pointer"
+                        />
+                     </a>
+                     <a href="#">
+                        <img
+                           src="assets/images/instagram.svg"
+                           alt="instagram"
+                           style="cursor: pointer"
+                        />
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <script src="assets/js/bootstrap.bundle.js"></script>
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>

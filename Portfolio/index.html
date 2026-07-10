@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="assets/imgs/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Vinícius Koga | Portfólio</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header style="position: absolute;">
+      <nav class="navbar navbar-expand-md py-0" style="background-color: #f6f7f7;">
+        <div class="container py-3 py-md-0">
+          <!-- LOGO -->
+          <a class="navbar-brand header-logo py-0" style="cursor: pointer;" href="#inicio"> <img src="assets/imgs/logo.png" alt="Header Logo" style="width: 130px;"> </a>
+          <!-- TOOGLER BUTTON -->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- NAV ITEMS -->
+          <div class="collapse navbar-collapse py-0" id="navbarSupportedContent" role="navigation">
+            <ul class="navbar-nav ms-auto my-2 my-md-0 navList">
+              <li class="nav-item inicio active">
+                <a class="nav-link inicio active pt-3 pb-0 pt-md-0 px-0 text-uppercase" aria-current="page" style="cursor: pointer;" href="#inicio">INÍCIO</a>
+              </li>
+              <li class="nav-item sobre-mim">
+                <a class="nav-link sobre-mim pt-3 pb-0 pt-md-0 px-0 text-uppercase" style="cursor: pointer;" href="#sobre-mim">SOBRE MIM</a>
+              </li>
+              <li class="nav-item projetos">
+                <a class="nav-link projetos pt-3 pb-0 pt-md-0 px-0 text-uppercase" style="cursor: pointer;" href="#projetos">PROJETOS</a>
+              </li>
+              <li class="nav-item curriculo">
+                <a class="nav-link curriculo pt-3 pb-0 pt-md-0 px-0 text-uppercase" href="assets/pdf/CV.pdf" download="Curriculo">CURRÍCULO<i class="bi bi-download ms-1"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SECTION BANNER -->
+    <section class="banner-area border-bottom mb-5" id="inicio">
+      <div class="inicio-intersection"></div>
+      <div class="container h-100">
+        <div class="row row-cols-1 row-cols-lg-2 h-100">
+          <!-- BANNER-LEFT -->
+          <div class="col h-100 pe-0 animated0" style="overflow-x: hidden;">
+            <div class="banner-left d-flex flex-column justify-content-center h-100">
+              <span class="banner-left-bg text-uppercase">KOGA</span>
+              <div class="row" style="z-index: 2;">
+                <div class="col col-auto text-uppercase text-start ps-sm-3"><span style="font-size: 2rem;">OLÁ, EU SOU</span></div>
+                <div class="col px-0 align-items-center d-flex"><div class="banner-left-line"></div></div>
+              </div>
+              <span style="font-size: 4rem;" class="text-uppercase text-start">VINICIUS KOGA</span>
+              <div class="row d-flex justify-content-start" style="z-index: 2;">
+                <span class="col col-auto my-3 pe-1 typeTextAnimation text-uppercase ps-sm-3" style="font-size: 1.3rem; line-height: 1.3rem;">&nbsp;</span>
+              </div>
+              <div class="row pt-3 d-flex justify-content-start" style="z-index: 2;">
+                <div class="col col-auto">
+                  <a href="https://www.linkedin.com/in/vin%C3%ADcius-koga-622447245/" target="_blank" title="Veja meu perfil no LinkedIn"><button class="btn linkedinBtn text-uppercase">LINKEDIN</button></a>
+                </div>
+                <div class="col col-auto ps-0">
+                  <a href="https://github.com/vinicius-koga" target="_blank" title="Veja meu perfil no Github"><button class="btn githubBtn text-uppercase">GITHUB</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BANNER-RIGHT -->
+          <div class="col h-100 ps-0 d-none d-lg-block" style="overflow: hidden;">
+            <div class="banner-right h-100 d-flex align-items-center justify-content-end">
+              <img src="assets/imgs/banner-bg-2.png" alt="Home Page Background" class="img-fluid" id="banner-avatar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION ABOUT-ME -->
+    <section class="about-me-area" id="sobre-mim">
+      <div class="container h-100">
+        <div class="row">
+          <div class="col text-center">
+            <h1>Sobre mim<span style="color: var(--var-blue);">.</span></h1>
+            <p class="mb-4" style="font-weight: 200; color: #777;">Que tal me conhecer um pouco?</p>
+          </div>
+        </div>
+        <div class="row h-100">
+          <div class="col d-flex align-items-center justify-content-center">
+            <!-- CONTAINER -->
+            <div class="about-me-container p-4 p-sm-5 rounded border">
+              <div class="row h-100">
+                <!-- LEFT-SIDE -->
+                <div class="col-12 col-md-4 d-none d-md-block show-bottom" style="transition: 0.4s ease;">
+                  <div class="img-box">
+                    <img src="assets/imgs/profile-pic-web.jpg" alt="Profile Picture" title="Profile Picture" class="img-fluid rounded">
+                    <div class="show-bottom-hover">
+                      Baixe meu&nbsp;<a href="assets/pdf/CV.pdf" download="Curriculo">currículo<i class="bi bi-download ms-1 me-0" style="font-size: 1rem;"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- RIGHT-SIDE -->
+                <div class="col-12 col-md-8 about-me-right">
+                  <div class="mobile-greeting d-flex">
+                    <!-- <div class="mg-left d-md-none me-2" style="width: 20%; min-width: 70px;">
+                      <img src="assets/imgs/profile-pic.png" alt="Profile Picture" style="width: 100%;">
+                    </div> -->
+                    <div class="mg-right">
+                      <span style="font-weight: 300;" class="about-me-greeting">Olá! me chamo</span> <br>
+                      <p class="mb-3" style="font-weight: 400; font-size: 2rem; color: var(--var-blue);">Vinícius Koga</p>
+                    </div>
+                  </div>
+                  <p class="mb-0" style="font-weight: 300;">Tecnologia e design digital são minhas frentes de estudo e pesquisa, o aprofundamento nestes temas ampliou minha perspectiva para oportunidades profissionais. Me identifiquei com o perfil de desenvolvedor front-end e, desta forma, tenho me dedicado a aprender novas tecnologias com o objetivo de me tornar profissional na área. <br><br> <span class="aboutme-intersection"></span>
+
+                    Apaixonado pelo "trio do desenvolvedor web" (HTML, CSS e Javascript), busco aprender frameworks, bibliotecas e pré-processadores que me auxiliem a desenvolver projetos de maior complexidade, como Bootstrap, Sass, Typescript e React.js <br><br>
+                  </p>                 
+                  <a href="https://www.linkedin.com/in/vin%C3%ADcius-koga-622447245/" target="_blank"><i title="LinkedIn" class="bi bi-linkedin" style="color: #2663a9;" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="LINKEDIN"></i></a>
+                  <a href="https://github.com/vinicius-koga" target="_blank"><i title="Github" class="bi bi-github" style="color: #e44d30;" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="GITHUB"></i></a> 
+                  <a href="mailto:vinicius_koga@outlook.com" target="_blank"><i title="E-mail" class="bi bi-envelope-at" style="color: #016bbb;"  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="E-MAIL"></i></a> 
+                  <a href="https://wa.me/5511949686508" target="_blank"><i title="Whatsapp" class="bi bi-whatsapp" style="color: #3fcf58;" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="WHATSAPP"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION MY-KNOWLEDGE -->
+    <section class="my-knowledge-area mt-4 mb-5 animated1 border-bottom" id="conhecimentos">
+      <div class="container pb-5 pt-2 pt-lg-3">
+        <div class="row">
+          <div class="col-12 col-lg-5 text-center text-lg-start">
+            <h2 class="mb-0">Meus Conhecimentos<span style="color: var(--var-blue);">.</span></h2>     
+            <p style="font-weight: 300; color: #777;" class="mt-2">Linguagens que estudo.</p>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="row row-cols-2 row-cols-md-4 h-100 lang-container pt-4 pt-lg-0">
+              <div class="col d-flex justify-content-center align-items-center">
+                <div data-tilt data-tilt-scale="1.1" class="lang-box html p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/html5-logo.png" alt="HTML Logo" title="HTML" class="img-fluid lang-img html">                   <div class="show-bottom-hover">
+                    HTML
+                  </div> </div>
+              </div>
+              <div class="col d-flex justify-content-center align-items-center">
+                <div data-tilt data-tilt-scale="1.1" class="lang-box css p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/css-logo.png" alt="CSS Logo" title="CSS" class="img-fluid lang-img css">                  <div class="show-bottom-hover">
+                    CSS
+                  </div> </div>
+              </div>
+              <div class="col d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                <div data-tilt data-tilt-scale="1.1" class="lang-box js p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/JavaScript-Logo.png" alt="JAVASCRIPT Logo" title="JAVASCRIPT" class="img-fluid lang-img js">                  <div class="show-bottom-hover">
+                    Javascript
+                  </div> </div>
+              </div>
+              <div class="col d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                <div data-tilt data-tilt-scale="1.1" class="lang-box sass p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/sass-logo.png" alt="SASS Logo" title="SASS" class="img-fluid lang-img sass">                  <div class="show-bottom-hover">
+                    Sass
+                  </div> </div>
+              </div>
+              <div class="col d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                <div data-tilt data-tilt-scale="1.1" class="lang-box bs p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/Bootstrap-logo.png" alt="BOOTSTRAP Logo" title="Bootstrap" class="img-fluid lang-img bs">                  <div class="show-bottom-hover">
+                    Bootstrap
+                  </div> </div>
+              </div>
+              <div class="col d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                <div data-tilt data-tilt-scale="1.1" class="lang-box git p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/Git-Icon.png" alt="GIT Logo" title="GIT" class="img-fluid lang-img git">                  <div class="show-bottom-hover">
+                    Git
+                  </div> </div>
+              </div>
+              <div class="col d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                <div data-tilt data-tilt-scale="1.1" class="lang-box typescript p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/Typescript_logo.png" alt="Typescript Logo" title="Typescript" class="img-fluid lang-img typescript">                  <div class="show-bottom-hover">
+                    Typescript
+                  </div> </div>
+              </div>
+              <div class="col d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                <div data-tilt data-tilt-scale="1.1" class="lang-box react p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/React-icon.png" alt="React Logo" title="React" class="img-fluid lang-img react">                  <div class="show-bottom-hover">
+                    React.js
+                  </div> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PROJECTS -->
+    <section class="project-area animated2" id="projetos">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1>Projetos<span style="color: var(--var-blue);">.</span></h1>
+            <p class="mb-5" style="font-weight: 200; color: #777;">Clique na imagem para vizualizar mais opções.</p>
+          </div>
+        </div>
+        <div class="row row-cols-md-2 row-cols-lg-3 row-cols-xxl-4">
+          <div class="col mb-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <div class="imgContainer" style="overflow: hidden;  position: relative;">
+                <div class="project-img" data-bs-toggle="modal" data-bs-target="#projects-modal">
+                  <div class="cardLang-box">
+                    <img src="assets/imgs/html5-logo.png" alt="HTML" title="HTML" class="cardLangIcon pizzaWebsite">
+                    <img src="assets/imgs/css-logo.png" alt="CSS" title="CSS" class="cardLangIcon pizzaWebsite">
+                    <img src="assets/imgs/JavaScript-Logo.png" alt="Javascript" title="Javascript" class="cardLangIcon pizzaWebsite">  
+                  </div>
+                  <img src="assets/imgs/projeto9.jpg" class="card-img-top pizzaWebsite" alt="Projeto Pizza Delivery" title="Pizza Delivery" style="max-height: 168px; min-height: 168px;">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 400;">Pizza Delivery</h5>
+                <p class="card-text projects-intersection" style="font-weight: 300;">Website que simula compra de pizzas de diferentes tipos e tamanhos.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="https://vinicius-koga.github.io/Pizza-Delivery/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4 justify-content-center d-flex">
+            <div class="card" style="width: 18rem;">
+              <div class="imgContainer" style="overflow: hidden;  position: relative;">
+                <div class="project-img" data-bs-toggle="modal" data-bs-target="#projects-modal">
+                  <div class="cardLang-box">
+                    <img src="assets/imgs/html5-logo.png" alt="HTML" title="HTML" class="cardLangIcon gifSearcher">
+                    <img src="assets/imgs/css-logo.png" alt="CSS" title="CSS" class="cardLangIcon gifSearcher">
+                    <img src="assets/imgs/JavaScript-Logo.png" alt="Javascript" title="Javascript" class="cardLangIcon gifSearcher">
+                    <img src="assets/imgs/Bootstrap-logo.png" alt="Bootstrap" title="Bootstrap" class="cardLangIcon gifSearcher">  
+                  </div>
+                  <img src="assets/imgs/Projeto6.png" class="card-img-top gifSearcher" alt="Buscador de Gif's" title="Buscador de Gif's" style="max-height: 168px; min-height: 168px;">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 400;">Buscador de Gif's</h5>
+                <p class="card-text" style="font-weight: 300;">Neste website utilizo consumo de API's para exibir Gif's baseado no que o usuário digita.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="https://vinicius-koga.github.io/Gif-Searcher/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4 justify-content-center d-flex">
+            <div class="card" style="width: 18rem;">
+              <div class="imgContainer" style="overflow: hidden;  position: relative;">
+                <div class="project-img" data-bs-toggle="modal" data-bs-target="#projects-modal">
+                  <div class="cardLang-box">
+                    <img src="assets/imgs/html5-logo.png" alt="HTML" title="HTML" class="cardLangIcon dashboard">
+                    <img src="assets/imgs/css-logo.png" alt="CSS" title="CSS" class="cardLangIcon dashboard">
+                    <img src="assets/imgs/JavaScript-Logo.png" alt="Javascript" class="cardLangIcon dashboard">
+                    <img src="assets/imgs/Bootstrap-logo.png" alt="Bootstrap" title="Bootstrap" class="cardLangIcon dashboard">  
+                  </div>
+                  <img src="assets/imgs/Projeto2.png" class="card-img-top dashboard" alt="Dashboard" title="Dashboard" style="max-height: 168px; min-height: 168px;">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 400;">Dashboard</h5>
+                <p class="card-text" style="font-weight: 300;">Dashboard que exibe dados fictícios de um perfil de usuário.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="https://vinicius-koga.github.io/Dashboard/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+              </div>
+            </div>
+          </div>
+          <div class="mobileHidden col mb-4 justify-content-center d-none d-md-flex">
+            <div class="card" style="width: 18rem;">
+              <div class="imgContainer" style="overflow: hidden;  position: relative;">
+                <div class="project-img" data-bs-toggle="modal" data-bs-target="#projects-modal">
+                  <div class="cardLang-box">
+                    <img src="assets/imgs/html5-logo.png" alt="HTML" title="HTML" class="cardLangIcon educationWebsite">
+                    <img src="assets/imgs/css-logo.png" alt="CSS" title="CSS" class="cardLangIcon educationWebsite">
+                    <img src="assets/imgs/JavaScript-Logo.png" alt="Javascript" title="Javascript" class="cardLangIcon educationWebsite">
+                    <img src="assets/imgs/Bootstrap-logo.png" alt="Bootstrap" title="Bootstrap" class="cardLangIcon educationWebsite">  
+                  </div>
+                  <img src="assets/imgs/Projeto1.png" class="card-img-top educationWebsite" alt="Projeto Site de Educação" title="Site de Educação" style="max-height: 168px; min-height: 168px;">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 400;">Site de Educação</h5>
+                <p class="card-text projects-intersection" style="font-weight: 300;">Website de educação em que utilizo recursos avançados de Bootstrap.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="https://vinicius-koga.github.io/Education-Website/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+              </div>
+            </div>
+          </div>
+          <div class="mobileHidden col mb-4 justify-content-center d-none d-md-flex">
+            <div class="card" style="width: 18rem;">
+              <div class="imgContainer" style="overflow: hidden;  position: relative;">
+                <div class="project-img" data-bs-toggle="modal" data-bs-target="#projects-modal">
+                  <div class="cardLang-box">
+                    <img src="assets/imgs/html5-logo.png" alt="HTML" title="HTML" class="cardLangIcon formValidator">
+                    <img src="assets/imgs/css-logo.png" alt="CSS" title="CSS" class="cardLangIcon formValidator">
+                    <img src="assets/imgs/JavaScript-Logo.png" alt="Javascript" title="Javascript" class="cardLangIcon formValidator">  
+                  </div>
+                  <img src="assets/imgs/Projeto4.png" class="card-img-top formValidator" alt="Validador de Formulários" title="Validador de Formulários" style="max-height: 168px; min-height: 168px;">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 400;">Validador de Formulários</h5>
+                <p class="card-text" style="font-weight: 300;">Um validador de formulários reutilizavel desenvolvido em Javascript.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="https://vinicius-koga.github.io/Form-Validator/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+              </div>
+            </div>
+          </div>
+          <div class="mobileHidden col mb-4 justify-content-center d-none d-md-flex">
+            <div class="card" style="width: 18rem;">
+              <div class="imgContainer" style="overflow: hidden;  position: relative;">
+                <div class="project-img" data-bs-toggle="modal" data-bs-target="#projects-modal">
+                  <div class="cardLang-box">
+                    <img src="assets/imgs/html5-logo.png" alt="HTML" title="HTML" class="cardLangIcon drSlider">
+                    <img src="assets/imgs/Typescript_logo.png" alt="Typescript" title="Typescript" class="cardLangIcon drSlider">
+                    <img src="assets/imgs/sass-logo.png" alt="SASS" title="SASS" class="cardLangIcon drSlider">
+                  </div>
+                  <img src="assets/imgs/Projeto11.jpg" class="card-img-top drSlider" alt="Draggable Slider" title="Draggable Slider" style="max-height: 168px; min-height: 168px;">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 400;">Draggable Slider</h5>
+                <p class="card-text" style="font-weight: 300;">Um slider arrastável que se ajusta ao centro. Compatível com desktop e dispositivos mobile.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="https://vinicius-koga.github.io/Draggable-Slider/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+              </div>
+            </div>
+          </div>
+          <div class="mobileHidden col mb-4 justify-content-center d-none d-md-flex">
+            <div class="card" style="width: 18rem;">
+              <div class="imgContainer" style="overflow: hidden;  position: relative;">
+                <div class="project-img" data-bs-toggle="modal" data-bs-target="#projects-modal">
+                  <div class="cardLang-box">
+                    <img src="assets/imgs/html5-logo.png" alt="HTML" title="HTML" class="cardLangIcon jogoDaVelha">
+                    <img src="assets/imgs/css-logo.png" alt="CSS" title="CSS" class="cardLangIcon jogoDaVelha">
+                    <img src="assets/imgs/JavaScript-Logo.png" alt="Javascript" title="Javascript" class="cardLangIcon jogoDaVelha">                  
+                  </div>
+                  <img src="assets/imgs/Projeto8.png" class="card-img-top jogoDaVelha" alt="Jogo da Velha" title="Jogo da Velha" style="max-height: 168px; min-height: 168px;">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 400;">Jogo da Velha</h5>
+                <p class="card-text" style="font-weight: 300;">Um jogo da velha desenvolvido em Javascript.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="https://vinicius-koga.github.io/Tic-Tac-Toe/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+              </div>
+            </div>
+          </div>
+          <div class="mobileHidden col mb-4 justify-content-center d-none d-md-flex">
+            <div class="card" style="width: 18rem;">
+              <div class="imgContainer" style="overflow: hidden;  position: relative;">
+                <div class="project-img" data-bs-toggle="modal" data-bs-target="#projects-modal">
+                  <div class="cardLang-box">
+                    <img src="assets/imgs/html5-logo.png" alt="HTML" title="HTML" class="cardLangIcon primeGaming">
+                    <img src="assets/imgs/css-logo.png" alt="CSS" title="CSS" class="cardLangIcon primeGaming">
+                    <img src="assets/imgs/JavaScript-Logo.png" alt="Javascript" title="Javascript" class="cardLangIcon primeGaming">
+                  </div>
+                  <img src="assets/imgs/Projeto3.png" class="card-img-top primeGaming" alt="Prime Gaming Clone" title="Prime Gaming Clone" style="max-height: 168px; min-height: 168px;">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 400;">Prime-Gaming Homepage</h5>
+                <p class="card-text" style="font-weight: 300;">Um clone da homepage da Prime-Gaming em que uso recursos avançados de HTML/CSS.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="https://vinicius-koga.github.io/Prime-Gaming-Clone/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+              </div>
+            </div>
+          </div>
+          <div class="desktopHidden mobileHidden col mb-4 justify-content-center d-none">
+            <div class="card" style="width: 18rem;">
+              <div class="imgContainer" style="overflow: hidden;  position: relative;">
+                <div class="project-img" data-bs-toggle="modal" data-bs-target="#projects-modal">
+                  <div class="cardLang-box">
+                    <img src="assets/imgs/html5-logo.png" alt="HTML" title="HTML" class="cardLangIcon calculator">
+                    <img src="assets/imgs/css-logo.png" alt="CSS" title="CSS" class="cardLangIcon calculator">
+                    <img src="assets/imgs/JavaScript-Logo.png" alt="Javascript" title="Javascript" class="cardLangIcon calculator">                  
+                    <img src="assets/imgs/Bootstrap-logo.png" alt="Bootstrap" title="Bootstrap" class="cardLangIcon calculator">
+                  </div>
+                  <img src="assets/imgs/Projeto5.png" class="card-img-top calculator" alt="Calculadora Simples" title="Calculadora Simples" style="max-height: 168px; min-height: 168px;">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 400;">Calculadora</h5>
+                <p class="card-text" style="font-weight: 300;">Uma calculadora para calculos simples desenvolvida em Javascript.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="https://vinicius-koga.github.io/Calculator/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+              </div>
+            </div>
+          </div>
+          <div class="desktopHidden mobileHidden col mb-4 justify-content-center d-none">
+            <div class="card" style="width: 18rem;">
+              <div class="imgContainer" style="overflow: hidden;  position: relative;">
+                <div class="project-img" data-bs-toggle="modal" data-bs-target="#projects-modal">
+                  <div class="cardLang-box">
+                    <img src="assets/imgs/html5-logo.png" alt="HTML" title="HTML" class="cardLangIcon passwordGen">
+                    <img src="assets/imgs/css-logo.png" alt="CSS" title="CSS" class="cardLangIcon passwordGen">
+                    <img src="assets/imgs/JavaScript-Logo.png" alt="Javascript" title="Javascript" class="cardLangIcon passwordGen">
+                  </div>
+                  <img src="assets/imgs/Projeto7.png" class="card-img-top passwordGen" alt="Gerador de Senhas" title="Gerador de Senhas" style="max-height: 168px; min-height: 168px;">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 400;">Gerador de Senhas</h5>
+                <p class="card-text" style="font-weight: 300;">Website que gera senhas difíceis conforme os parâmetros que o usuário definir.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="https://vinicius-koga.github.io/Password-Generator/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+              </div>
+            </div>
+          </div>
+          <div class="desktopHidden mobileHidden col mb-4 justify-content-center d-none">
+            <div class="card" style="width: 18rem;">
+              <div class="imgContainer" style="overflow: hidden;  position: relative;">
+                <div class="project-img" data-bs-toggle="modal" data-bs-target="#projects-modal">
+                  <div class="cardLang-box">
+                    <img src="assets/imgs/html5-logo.png" alt="HTML" title="HTML" class="cardLangIcon cssHover">
+                    <img src="assets/imgs/sass-logo.png" alt="Sass" title="Sass" class="cardLangIcon cssHover">
+                  </div>
+                  <img src="assets/imgs/projeto10.png" class="card-img-top cssHover" alt="CSS Hover Effect" title="CSS Hover Effect" style="max-height: 168px; min-height: 168px;">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 400;">CSS Hover Effect</h5>
+                <p class="card-text" style="font-weight: 300;">Um exemplo de efeito ao passar o mouse em cima de itens.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="https://vinicius-koga.github.io/CSS-Hover-Effect/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mb-4 d-none d-md-block">
+          <span class="seeMoreBtnDesktop rounded d-inline-block" onclick="showMoreDesktop()">Ver mais projetos <i class="bi bi-arrow-down"></i></span>
+        </div>
+        <div class="text-center mb-4 d-block d-md-none">
+          <span class="seeMoreBtn rounded d-inline-block" onclick="showMore()">Ver mais projetos <i class="bi bi-arrow-down"></i></span>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-top">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-12 d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="d-flex justify-content-center justify-content-md-end bi-links mb-2 mb-md-0">
+              <a href="https://www.linkedin.com/in/vin%C3%ADcius-koga-622447245/" target="_blank"><i title="linkedIn" class="bi bi-linkedin ps-3" style="font-size: 23px;"></i></a>
+              <a href="https://github.com/vinicius-koga" target="_blank"><i title="Github" class="bi bi-github ps-3" style="font-size: 23px;"></i></a>
+              <a href="mailto:vinicius_koga@outlook.com" target="_blank"><i title="E-mail" class="bi bi-envelope-fill ps-3" style="font-size: 23px;"></i></a>
+              <a href="https://wa.me/5511949686508" target="_blank"><i title="Whatsapp" class="bi bi-whatsapp ps-3" style="font-size: 23px;"></i></a>
+            </div>
+            <div style="font-weight: 300; color: #555;">
+              <div class="footer-repo text-center mb-1 mb-md-0" style="font-weight: 400;">
+                Veja meus <a href="https://github.com/vinicius-koga?tab=repositories" target="_blank" style="font-weight: 300;">repositórios<i class="bi bi-box-arrow-up-right ms-1"></i></a> no Github.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- MODALS -->
+    <div class="modal fade" id="projects-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="display: flex; justify-content: center;">
+        <div class="modal-content" style="max-height: 55vh; width: auto;">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">    </h1>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-around" style="font-weight: 300;">
+            <a target="_blank" class="modal-link-r"><button class="btn cardButton mx-2">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+            <a target="_blank" class="modal-link-p"><button class="btn cardButton mx-2">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script type="text/javascript" src="assets/js/vanilla-tilt.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

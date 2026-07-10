@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Oswald';
+    font-weight: 400;
+    line-height: 0.9;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ececec;
+    position: relative;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1.5rem;
+    transform: scale(1.3);
+    transition: 0.2s ease;
+    box-shadow: 4px 4px 0 #ccc;
+}
+
+.container:hover {
+    transform: scale(1.32);
+}
+
+.container-title {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.container input {
+    outline: 0;
+    padding: 0.3rem;
+    border: 1px solid #c7c7c7;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.container input::placeholder {
+    color: rgb(235, 235, 235);
+}
+
+.container-checklist {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.container-checklist input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.labelContainer {
+    margin-bottom: 15px;
+    transition: 0.1s ease;
+}
+
+.labelContainer:last-child {
+    margin-bottom: 0;
+}
+
+.labelContainer label {
+    cursor: pointer;
+}
+
+.labelContainer label input {
+    transition: all 0.1s ease;
+}
+
+.labelContainer label input:active {
+    transform: scale(0.8);
+}
+
+#clearBtn {
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 30px;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border: 0;
+    background-color: #fff;
+    box-shadow: 4px 4px 0 #ccc;
+    transition: all 0.08s ease;
+    border-radius: 5px;
+}
+#clearBtn:active {
+    box-shadow: none;
+    transform: translateX(4px) translateY(4px)
+}
+
+#saveNote {
+    position: absolute;
+    top: 10px;
+    transform: translateY(-80px);
+    padding: 12px 24px;
+    background: #22c55e;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 2px 2px 0 #1c9c4b;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#clearNote {
+    position: absolute;
+    top: 10px;
+    transform: translateY(-80px);
+    padding: 12px 24px;
+    background: #c52222;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 2px 2px 0 #941919;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.animation {
+    animation: popUp 1s ease forwards;
+}
+
+@keyframes popUp {
+
+    /* Começa escondida acima */
+    0% {
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+
+    /* Desce */
+    15% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* Permanece visível */
+    75% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* Sobe e desaparece */
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}

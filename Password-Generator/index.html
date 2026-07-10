@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #ddd;">
+    <main style="background-color: #fff;">
+        <h1>Gerador de Senhas</h1>
+        <div class="password-field">
+            <input type="text" title="password" name="password" id="password-input" value="" disabled>
+            <div class="copy-icon-box">
+                <img src="./assets/img/copy-icon.png" alt="Copy icon" id="copy-icon">
+                <img src="./assets/img/check-icon.png" alt="Check icon" id="check-icon" style="display: none;">
+            </div>
+        </div>
+        <div class="input-field" style="margin-top: 20px;">
+            <label for="character-number">Quantidade de caracteres:</label>
+            <input type="number" name="character-amount" id="character-amount" min="0" max="50" value="10">
+        </div>
+        <div class="input-field">
+            <label for="check-lowercase">Incluir minúsculas</label>
+            <input type="checkbox" name="check-lowercase" id="check-lowercase" checked>
+        </div>
+        <div class="input-field">
+            <label for="check-uppercase">Incluir maiúsculas</label>
+            <input type="checkbox" name="check-uppercase" id="check-uppercase">
+        </div>
+        <div class="input-field">
+            <label for="check-number">Incluir números</label>
+            <input type="checkbox" name="check-number" id="check-number">
+        </div>
+        <div class="input-field">
+            <label for="check-symbol">Incluir símbolos</label>
+            <input type="checkbox" name="check-symbol" id="check-symbol">
+        </div>
+        <button id="generate-btn">Gerar</button>
+    </main>
+    <script src="./assets/js/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form Validator</title>
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+   <div class="screen">
+      <section class="leftside">
+      </section>
+
+      <main class="rightside">
+
+         <!-- <div class="info tg" style="border-radius: 8px;" data-bs-toggle="modal" data-bs-target="#exampleModal">?</div> -->
+
+         <form method="post" class="validator" action="example.php">
+            <fieldset>
+               <legend>Crie uma conta</legend>
+               <p>A validação de seus dados foi feita inteiramente em Javascript! :)</p>
+               <div class="form-input">
+                  <input type="text" name="username" placeholder="Nome" data-rules="required&min=2&name&needSpace" class="text-input">
+               </div>
+               <div class="form-input">
+                  <input type="text" name="email" placeholder="Email"  data-rules="required&email" class="text-input">
+               </div>
+               <div class="form-input">
+                  <input type="password" name="password" placeholder="Senha"  data-rules="required&min=8&needSymbol&noSpace" class="text-input">
+               </div>
+               <div class="form-input">
+                  <input type="submit" value="Criar conta" id="submits">
+               </div>
+            </fieldset>
+         </form>
+
+         <div class="login">
+            Já tem uma conta? <a href="#">Faça o login</a>
+         </div>
+
+         <footer class="copyright">Baseado em um template de <a href="https://www.jimraptis.com/?ref=dribbble" target="_blank">Jim Raptis</a></footer>
+      </main>
+   </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

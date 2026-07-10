@@ -1,0 +1,178 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins';
+   font-weight: 400;
+   color: #6e7381;
+}
+
+.screen {
+   display: flex;
+   height: 100vh;
+}
+
+.leftside {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url(../images/bg.png);
+}
+
+.rightside {
+   width: 50vw;
+   background-color: #1C2E4F;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* .rightside .info {
+   height: 40px;
+   width: 40px;
+   background-color: #e4d7c9;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 2rem;
+   font-weight: 600;
+   color: #1C2E4F;
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   cursor: pointer;
+   transition: all 0.2s ease;
+}
+
+.rightside .info:hover {
+   transform: scale(1.05);
+} */
+
+.list li {
+   color: #444;
+}
+
+.rightside form {
+   max-width: 300px;
+}
+
+form fieldset {
+   border: 0;
+}
+
+form legend {
+   color: #e1cbb1;
+   font-weight: 500;
+   text-align: center;
+   font-size: 1.8rem;
+}
+
+form p {
+   font-size: 0.9rem;
+   margin-bottom: 35px;
+   text-align: center;
+}
+
+form .form-input {
+   display: block;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
+form .form-input:nth-of-type(4) {
+   margin-bottom: 50px;
+}
+
+form .form-input input {
+   outline: 0;
+   background-color: transparent;
+   border: 2px solid #6e7381;
+   padding: 11px;
+   width: 100%;
+   font-size: 0.9rem;
+   color: #e1cbb1;
+   transition: all 0.3s ease;
+}
+
+form .form-input input::placeholder {
+   color: #6e7381;
+}
+
+#submits {
+   background-color: #e1cbb1;
+   color: #1C2E4F;
+   font-weight: 600;
+   border: 0;
+   cursor: pointer;
+}
+
+#submits:hover {
+   transition: all 0.2s ease;
+   background-color: white;
+}
+
+.login {
+   text-align: center;
+   font-size: 0.9rem;
+}
+
+a {
+   color: #e1cbb1;
+}
+
+a:hover {
+   color: white;
+   transition: all 0.1s ease;
+}
+
+.copyright {
+   position: absolute;
+   right: 10px;
+   bottom: 10px;
+   font-size: 0.9rem;
+}
+
+.error {
+   background-color: #e1cbb1;
+   color: #1C2E4F;
+   font-size: 0.9rem;
+   border-radius: 0px 0px 5px 5px;
+   padding-left: 10px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+   -webkit-text-fill-color: #e1cbb1 !important;
+   -webkit-box-shadow: 0 0 0 1000px #1C2E4F inset;
+}
+
+input[type="password"] {
+   color: white;
+   background-color: black;
+}
+
+::-ms-reveal {
+   filter: invert(100%);
+}
+
+@media (max-width: 690px) {
+   .leftside {
+      display: none;
+   }
+
+   .rightside {
+      width: 100vw;
+   }
+}

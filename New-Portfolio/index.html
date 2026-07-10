@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK | Portfólio</title>
+    <link rel="shortcut icon" href="./assets/img/logo-01.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-col-side">
+                <img src="./assets/img/logo-02.svg" class="header-logo" title="Logo">
+                <a href="#"><button class="arrow-btn left" style="display: none;"><i class="fa-solid fa-angles-left"></i></button></a>
+            </div>
+            <nav class="header-col-center">
+                <ul>
+                    <li> <a href="#" class="active homeBtn">Home</a> </li>
+                    <li> <a href="#" class="conhecimentosBtn">Conhecimentos</a> </li>
+                    <li> <a href="#" class="projetosBtn">Projetos</a> </li>
+                    <li> <a href="#" class="contatoBtn">Contato</a> </li>
+                </ul>
+            </nav>
+            <div class="header-col-side">
+                <a href="#"><button class="arrow-btn right"><i class="fa-solid fa-angles-right"></i></button></a>
+                <i class="fa-solid fa-square-caret-down mobile-menu-btn"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE NAVBAR -->
+    <div class="mobile-menu closed">
+        <nav>
+            <ul >
+                <a href="#home"><li class="active">Home</li></a>
+                <a href="#conhecimentos"><li>Conhecimentos</li></a>
+                <a href="#projetos"><li>Projetos</li></a>
+                <a href="#contato"><li>Contato</li></a>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="intersectionBar iHome"></div>
+
+        <div class="container" style="position: relative; overflow: hidden;">
+            <div class="home-left">
+                <div style="overflow-y: hidden;">
+                    <h3 class="title-md home-subtitle opacity-0">Olá! Me chamo</h3>
+                </div>
+                <div style="overflow-y: hidden;">
+                    <h2 class="title-lg home-title opacity-0-noAnimation">Vinícius Koga</h2>
+                </div>
+                <p class="basic-txt home-subtext typeTextAnimation">&nbsp;</p>
+                <div style="overflow-y: hidden;">
+                    <a href="#"><button class="btn home-btn opacity-0-noAnimation">Baixe meu currículo <i class="fa-solid fa-download"></i></button></a>
+                </div>
+            </div>
+
+            <div class="circles-box bottomright lg">
+                <div class="circle lg"></div>
+                <div class="circle md"></div>
+                <div class="circle sm"></div>
+                <div class="icon-bar one">
+                    <a href="#">
+                        <div class="icon-circle" title="E-mail"> <i class="fa-solid fa-at"></i> </div>
+                    </a>
+                </div>
+                <div class="icon-bar two">
+                    <a href="#">
+                        <div class="icon-circle" title="Github"> <i class="fa-brands fa-github"></i> </div>
+                    </a>
+                </div>
+                <div class="icon-bar three">
+                    <a href="#">
+                        <div class="icon-circle" title="LinkedIn"> <i class="fa-brands fa-linkedin-in"></i> </div>
+                    </a>
+                </div>
+                <div class="icon-bar four">
+                    <a href="#">
+                        <div class="icon-circle" title="Whatsapp"> <i class="fa-brands fa-whatsapp"></i> </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="home-footer">
+                Para mais informações sobre este website, acesse o <a href="#">repositório no Github.</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONHECIMENTOS -->
+    <section class="conhecimentos" id="conhecimentos">
+        <div class="intersectionBar iConhecimentos"></div>
+
+        <div class="container">
+            <div class="skills-container">
+               <div class="col left">
+                  <div class="section-tag basic-txt typeTextAnimation">&nbsp;</div>
+                  <h2>Tecnologias que estudo.</h2>
+                  <p class="basic-txt">Busco representar aqui meu nível de familiaridade com as tecnologias que estudo.</p>
+                  <a href="#" target="_blank"> <button class="btn left">Veja mais sobre mim<i class="fa-solid fa-link"></i></button> </a>
+               </div>
+               <div class="col right">
+                  <div class="skill-item">
+                     <span class="basic-txt">HTML/CSS</span>
+                     <div class="skill-item-bar">
+                        <div class="skill-item-bar-inner" id="htmlcss"></div>
+                     </div>
+                  </div>
+
+                  <div class="skill-item">
+                     <span class="basic-txt">JAVASCRIPT</span>
+                     <div class="skill-item-bar">
+                        <div class="skill-item-bar-inner" id="javascript"></div>
+                     </div>
+                  </div>
+
+                  <div class="skill-item">
+                     <span class="basic-txt">GIT</span>
+                     <div class="skill-item-bar">
+                        <div class="skill-item-bar-inner" id="git"></div>
+                     </div>
+                  </div>
+
+                  <div class="skill-item">
+                     <span class="basic-txt">BOOTSTRAP</span>
+                     <div class="skill-item-bar">
+                        <div class="skill-item-bar-inner" id="bootstrap"></div>
+                     </div>
+                  </div>
+
+                  <div class="skill-item">
+                     <span class="basic-txt">SASS</span>
+                     <div class="skill-item-bar">
+                        <div class="skill-item-bar-inner" id="sass"></div>
+                     </div>
+                  </div>
+
+                  <div class="skill-item">
+                     <span class="basic-txt">WORDPRESS</span>
+                     <div class="skill-item-bar">
+                        <div class="skill-item-bar-inner" id="wordpress"></div>
+                     </div>
+                  </div>
+
+                  <div class="skill-item">
+                     <span class="basic-txt">REACT.JS</span>
+                     <div class="skill-item-bar">
+                        <div class="skill-item-bar-inner" id="react"></div>
+                     </div>
+                  </div>
+
+                  <div class="skill-item">
+                     <span class="basic-txt">TYPESCRIPT</span>
+                     <div class="skill-item-bar">
+                        <div class="skill-item-bar-inner" id="typescript"></div>
+                     </div>
+                  </div>
+
+                  <div class="skill-item">
+                     <span class="basic-txt">MYSQL</span>
+                     <div class="skill-item-bar">
+                        <div class="skill-item-bar-inner" id="mysql"></div>
+                     </div>
+                  </div>
+               </div>
+               <a href="#" target="_blank" class="mobile-link"> <button class="btn right">Veja mais sobre mim<i class="fa-solid fa-link"></i></button> </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="projetos" id="projetos">
+        <div class="intersectionBar iProjetos"></div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato" id="contato">
+        <div class="intersectionBar iContato"></div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/animation.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.container.header {
+    display: flex;
+    justify-content: center;
+}
+.container.header button {
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.container.body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
+    gap: 1rem;
+    
+}
+.container.body .post {
+    background-color: #ddd;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.container.body .post .post-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}

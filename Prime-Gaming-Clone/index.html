@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Gaming | League of Legends</title>
+    <link rel="shortcut icon" href="https://images.ctfassets.net/5lpapfxq15sk/5UxLcq35O7hy5wxTHGenHf/7b237a7eb517a0d7bb2a7c4066352470/TP-crown.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header--left-content">
+            <a href=""><img src="assets/images/logo.png" class="header-logo" alt="Prime Gaming logo"></a>
+            <img src="assets/images/arrow.png" class="header-arrow">
+            <span>League of Legends</span>
+        </div>
+        <div class="header--right-content">
+            <div class="header--right-content--container" id="lang" onclick="openLang()">
+                <img src="assets/images/web-icon.png" id="langIcon" class="header-icon--right">
+                <p id="langText">PT</p>
+                <img src="assets/images/arrow.png" id="langArrow" class="header-arrow--right lang">
+            </div>
+            <div class="l-o" id="l-o">
+                <nav class="l-o--container">
+                    <span class="a">Deutsch</span>
+                    <span class="a">English</span>
+                    <span class="a">English - UK</span>
+                    <span class="a">Français</span>
+                    <span class="a">Italiano</span>
+                    <span class="a">Nederlands</span>
+                    <span class="a">Polski</span>
+                    <span class="a selected">Português - Brasil</span>
+                    <span class="a">Svenska</span>
+                    <span class="a">Turkce</span>
+                </nav>
+            </div>
+            <div class="header--right-content--container" id="prof" onclick="openProfile()">
+                <img src="assets/images/profile.png" id="profIcon" class="header-icon--right">
+                <p id="profText">Nickname</p>
+                <img src="assets/images/arrow.png" id="profArrow" class="header-arrow--right profile">
+            </div>
+            <div class="p-o" id="p-o">
+               <nav class="p-o--container">
+                  <div class="p-o--profile"> 
+                     <div class="p-o--img"> <img src="assets/images/profile.png"> </div>
+                     <span>Nickname</span>
+                  </div>
+                  <div class="p-o--bar"></div>
+                  <div class="p-o--content">
+                     <span>Sobre o prime gaming</span>
+                     <span>Jogos e itens</span>
+                     <span>Suporte</span>
+                  </div>
+                  <div class="p-o--bar dois"></div>
+                  <div class="p-o--content">
+                     <span>Gerenciar contas Twitch</span>
+                     <span>Configurações de notificação</span>
+                     <span>Idioma</span>
+                  </div>
+                  <div class="p-o--bar dois"></div>
+                  <div class="p-o--content">
+                     <span>Sair</span>
+                  </div>
+               </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="banner">
+        <div class="banner-left">
+            <h1>League of Legends</h1>
+            <h2>DISPONÍVEL PARA PC E MAC OS</h2>
+            <span>Por tempo limitado, desbloqueie Cápsulas Prime Gaming para obter RP, Essência Míticas, skins e muito mais</span>
+            <span>— disponível para assinantes Amazon Prime.</span>
+        </div>
+
+        <div class="slider">
+            <div class="slider-buttons">
+               <div class="slider-button left" onclick="goPrev()"> <div class="slider-button-left-inner"> <img src="assets/images/arrow.png" alt=""> </div> </div>
+               <div class="slider-button right" onclick="goNext()"> <div class="slider-button-right-inner"> <img src="assets/images/arrow.png" alt=""> </div> </div>
+            </div>
+            <div class="slider-width">
+
+               <div class="spacing"></div>
+
+               <div class="slider-item active">
+                  <div class="slider-item-title">Resgate agora</div>
+                  <div class="slider-item-img-out">
+                     <div class="slider-item-img"> <div class="slider-item-img-inner"></div> </div>
+                  </div>
+               </div>
+
+               <div class="slider-item">
+                  <div class="slider-item-title">Fevereiro</div>
+                  <div class="slider-item-img-out">
+                     <div class="slider-item-img"> <div class="slider-item-img-inner"></div> </div>
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="slider-item-title">Março</div>
+                  <div class="slider-item-img-out">
+                     <div class="slider-item-img"> <div class="slider-item-img-inner"></div> </div>
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="slider-item-title">Abril</div>
+                  <div class="slider-item-img-out">
+                     <div class="slider-item-img"> <div class="slider-item-img-inner"></div> </div>
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="slider-item-title">Maio</div>
+                  <div class="slider-item-img-out">
+                     <div class="slider-item-img"> <div class="slider-item-img-inner"></div> </div>
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="slider-item-title">Junho</div>
+                  <div class="slider-item-img-out">
+                     <div class="slider-item-img"> <div class="slider-item-img-inner"></div> </div>
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="slider-item-title">Julho</div>
+                  <div class="slider-item-img-out">
+                     <div class="slider-item-img"> <div class="slider-item-img-inner"></div> </div>
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="slider-item-title">Agosto</div>
+                  <div class="slider-item-img-out">
+                     <div class="slider-item-img"> <div class="slider-item-img-inner"></div> </div>
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="slider-item-title">Setembro</div>
+                  <div class="slider-item-img-out">
+                     <div class="slider-item-img"> <div class="slider-item-img-inner"></div> </div>
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="slider-item-title">Outubro</div>
+                  <div class="slider-item-img-out">
+                     <div class="slider-item-img"> <div class="slider-item-img-inner"></div> </div>
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="slider-item-title">Novembro</div>
+                  <div class="slider-item-img-out">
+                     <div class="slider-item-img"> <div class="slider-item-img-inner"></div> </div>
+                  </div>
+               </div>
+               <div class="slider-item" id="last-item">
+                  <div class="slider-item-title">Dezembro</div>
+                  <div class="slider-item-img-out">
+                     <div class="slider-item-img"> <div class="slider-item-img-inner"></div> </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </main>
+
+
+    <section class="img-content">
+        <div class="img"></div>
+        <div class="content">
+            <div class="content--box">
+                <h1>Jogue League of Legends agora</h1>
+                <p>League of Legends é um jogo de estratégia em equipes, no qual dois grupos de cinco poderosos campeões se enfrentam para destruir a base inimiga. Escolha entre mais de 140 campeões para realizar jogadas épicas, conseguir abates e destruir as torres inimigas, enquanto luta para vencer.</p>
+                <button>Adquira o jogo</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="img-content left">
+      <div class="img"></div>
+        <div class="content">
+            <div class="content--box">
+                <h1>Mais conteúdo para jogo com Amazon Prime</h1>
+                <p>Entrega rápida e grátis para diversos produtos de jogos: <a href="">Amazon Gaming Store</a>.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="doubts">
+
+        <div class="doubts-title">
+            <div class="doubts-title-bar"></div>
+            <h1>Perguntas Frequentes</h1>
+        </div>
+
+        <div class="doubts-container">
+
+            <div class="doubts-container-left">
+
+                <div class="accordion accordionElement1">
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1">
+                            <div class="doubts-question-box">
+                                <div class="doubts-number">1.</div> <div class="doubts-question">Oque está incluído nesta oferta?</div>
+                            </div>
+                          </button>
+                       </h2>
+                       <div id="c1" class="collapse accordion-collapse" data-bs-parent=".accordionElement1">
+                          <div class="accordion-body">
+                             <div class="doubts-text">                               
+                                    Apenas por tempo limitado, desbloqueie o emote Very Nasus, Much Wow e a Cápsula Prime Gaming, incluindo 350 RP, 5 Essências Míticas, (1) Skin Permanente de 1350 RP Não Possuída, 200 Essências Laranjas, (5) Fragmentos de Campeão, (2) Fragmentos Eternos da Série 1 e (1) Aumento de EXP de 30 dias.
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                 <div class="accordion accordionElement3">
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3">
+                            <div class="doubts-question-box">
+                                <div class="doubts-number">3.</div> <div class="doubts-question">Como posso adquirir meu conteúdo?</div>
+                            </div>
+                          </button>
+                       </h2>
+                       <div id="c3" class="collapse accordion-collapse" data-bs-parent=".accordionElement3">
+                          <div class="accordion-body">
+                             <div class="doubts-text">                               
+                                Entre no League of Legends depois de resgatar a oferta e sua Cápsula Prime Gaming gratuita estará na página de loot, esperando para ser aberta! Se você criou uma nova conta, certifique-se de completar o tutorial para receber o conteúdo.
+
+                                Aviso importante: Para garantir que você receberá seu conteúdo, certifique-se de ter vinculado e entrado em sua conta principal da Riot e NÃO em uma conta do Ambiente Público de Testes (APT ou PBE, em inglês).
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                 <div class="accordion accordionElement5">
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c5">
+                            <div class="doubts-question-box">
+                                <div class="doubts-number">5.</div> <div class="doubts-question">Posso vincular contas diferentes da Amazon à minha conta da Riot e resgatar cada oferta várias vezes? </div>
+                            </div>
+                          </button>
+                       </h2>
+                       <div id="c5" class="collapse accordion-collapse" data-bs-parent=".accordionElement5">
+                          <div class="accordion-body">
+                             <div class="doubts-text">                               
+                                Não, cada oferta se aplica a uma única conta. Cada conta pode receber apenas uma oferta.
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                 <div class="accordion accordionElement7">
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c7">
+                            <div class="doubts-question-box">
+                                <div class="doubts-number">7.</div> <div class="doubts-question">O que acontecerá com meu conteúdo quando minha assinatura ou teste gratuito do Prime expirar? </div>
+                            </div>
+                          </button>
+                       </h2>
+                       <div id="c7" class="collapse accordion-collapse" data-bs-parent=".accordionElement7">
+                          <div class="accordion-body">
+                             <div class="doubts-text">                               
+                                Após o resgate, todo o conteúdo entregue em seu jogo será permanentemente seu, de acordo com as regras ou políticas do League of Legends que se aplicarem.
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                 <div class="accordion accordionElement9">
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c9">
+                            <div class="doubts-question-box">
+                                <div class="doubts-number">9.</div> <div class="doubts-question">Recebo conteúdo passado se me juntar ao Amazon Prime e resgatar o conteúdo do League of Legends após o lançamento?</div>
+                            </div>
+                          </button>
+                       </h2>
+                       <div id="c9" class="collapse accordion-collapse" data-bs-parent=".accordionElement9">
+                          <div class="accordion-body">
+                             <div class="doubts-text">                               
+                                Você só receberá os conteúdos que estiverem disponíveis no momento.
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+            </div>
+
+            <div class="doubts-container-right">
+
+                <div class="accordion accordionElement2">
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2">
+                            <div class="doubts-question-box">
+                                <div class="doubts-number">2.</div> <div class="doubts-question">Preciso ser assinante do Amazon Prime para ter acesso a essa oferta?</div>
+                            </div>
+                          </button>
+                       </h2>
+                       <div id="c2" class="collapse accordion-collapse" data-bs-parent=".accordionElement2">
+                          <div class="accordion-body">
+                             <div class="doubts-text">                               
+                                Sim. Clique no botão "Experimente o Prime" acima para se cadastrar para um teste gratuito de 30 dias do Prime. Se você já é um assinante do Amazon Prime, clique em “Conectar-se” e siga as etapas para vincular sua conta da Amazon.
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                 <div class="accordion accordionElement4">
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c4">
+                            <div class="doubts-question-box">
+                                <div class="doubts-number">4.</div> <div class="doubts-question">O meu conteúdo estará disponível em todas as regiões em que jogo?</div>
+                            </div>
+                          </button>
+                       </h2>
+                       <div id="c4" class="collapse accordion-collapse" data-bs-parent=".accordionElement4">
+                          <div class="accordion-body">
+                             <div class="doubts-text">                                                               
+                                Essa oferta só pode ser reivindicada uma vez por cada assinatura Amazon Prime e conta Riot. Essas recompensas estão disponíveis para contas Riot, exceto nos seguintes servidores: Rússia, China e Vietnã.
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                 <div class="accordion accordionElement6">
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c6">
+                            <div class="doubts-question-box">
+                                <div class="doubts-number">6.</div> <div class="doubts-question">Recebi uma mensagem de erro indicando que minha conta Amazon já resgatou esse conteúdo. O que eu faço?</div>
+                            </div>
+                          </button>
+                       </h2>
+                       <div id="c6" class="collapse accordion-collapse" data-bs-parent=".accordionElement6">
+                          <div class="accordion-body">
+                             <div class="doubts-text">                                                               
+                                Certifique-se de que a mesma conta da Riot esteja vinculada à conta da Amazon usada originalmente para resgatar o conteúdo.
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                 <div class="accordion accordionElement8">
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c8">
+                            <div class="doubts-question-box">
+                                <div class="doubts-number">8.</div> <div class="doubts-question">Posso transferir meu conteúdo resgatado para uma conta da Riot diferente?</div>
+                            </div>
+                          </button>
+                       </h2>
+                       <div id="c8" class="collapse accordion-collapse" data-bs-parent=".accordionElement8">
+                          <div class="accordion-body">
+                             <div class="doubts-text">                                                               
+                                Não. Assim que o conteúdo for atribuído a uma conta da Riot, ele não poderá ser transferido para outra conta.
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                 <div class="accordion accordionElement10">
+                    <div class="accordion-item">
+                       <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10">
+                            <div class="doubts-question-box">
+                                <div class="doubts-number">10.</div> <div class="doubts-question">Estou vendo outros jogos no site do Prime Gaming. Preciso resgatar cada campanha separadamente?</div>
+                            </div>
+                          </button>
+                       </h2>
+                       <div id="c10" class="collapse accordion-collapse" data-bs-parent=".accordionElement10">
+                          <div class="accordion-body">
+                             <div class="doubts-text">                               
+                                Sim. Cada campanha de jogo é diferente, então você precisa resgatar cada uma delas separadamente.
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-topbutton" onclick="backTop()">Voltar ao topo</div>
+
+        <div class="footer-container">
+            <div class="footer-container--left">
+                <img src="assets/images/logo.png" alt="Prime Gaming logo">
+                <div class="fcl-bar"></div>
+                <div class="fcl-info">
+                    <span>Siga @PrimeGaming</span>
+                    <span>©1996-2022, Amazon.com, Inc. ou suas afiliadas</span>
+                    <div class="fcl-links">
+                        <a href="">Condições de Uso</a> <a href="">Aviso de Privacidade</a> <a href="">Guia do Prime Gaming</a> <a href="">Aviso sobre cookies</a> <a href="">Anúncios baseados em interesses</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-container--right">
+                <img src="assets/images/amazon_logo.png" alt="Amazon logo">
+            </div>
+        </div>
+
+    </footer>  
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

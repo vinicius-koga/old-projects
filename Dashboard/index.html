@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/icons/logo.svg">
+</head>
+<body>
+    <header class="sidebar lightTheme" style="border-right: 1px solid #ddd; z-index: 2;">
+        <i class="bi bi-x-lg fontLightTheme sideBarCloseBtn d-block d-xl-none"></i>
+        <div class="sidebarHeader d-flex justify-content-between px-4 pt-3 pb-5 pt-xl-5">
+            <div class="sidebarHeader-Left">
+                <a href="#" class="d-flex align-items-center text-decoration-none">
+                    <i class="bi bi-boxes me-1 d-flex" style="font-size: 23px; color: var(--bg-blue); margin-bottom: 4px;"></i>
+                    <h4 class="m-0">Dashboard</h4>
+                </a>
+            </div>
+            <div class="sidebarHeader-Right d-flex align-items-center">
+                <i class="bi bi-brightness-high fontLightTheme" style="font-size: 17px;"></i>
+                <div class="form-check form-switch ms-2">
+                    <input type="checkbox" class="form-check-input unselected switchThemeBtn" onclick="switchTheme()">
+                </div>
+                <i class="bi bi-moon-stars fontLightTheme" style="font-size: 15px;"></i>
+            </div>
+        </div>
+        <nav class="sidebarMenu mx-4">
+            <div class="accordionLight mb-4" id="accordionExample">
+
+                <span class="fontLightTheme menuTitle">Menu</span>
+
+                <div class="accordion-item mt-3">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-grid-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                        <span class="fontLightTheme accordionTitle">Dashboard</span>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Components</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Information</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">User Application</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Extra Content</a>
+                            <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Permissions</a>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-box2-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Components</span>
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Components</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Information</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Permissions</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-collection-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Extra Components</span>
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Extra Content</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Permissions</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-grid-1x2-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Layouts</span>
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Information</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">User Application</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Extra Content</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="accordionLight mb-4" id="accordionExample">
+
+                <span class="fontLightTheme menuTitle">Role & Permissions</span>
+
+                <div class="accordion-item mt-3">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-person-circle me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                        <span class="fontLightTheme accordionTitle">Users</span>
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">User Application</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Extra Content</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Permissions</a>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-person-check-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Admins</span>
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Components</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Information</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Extra Content</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Permissions</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-collection-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Extra Information</span>
+                      </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Components</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Information</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">User Application</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="accordionLight mb-4" id="accordionExample">
+
+                <span class="fontLightTheme menuTitle">Pages</span>
+
+                <div class="accordion-item mt-3">
+                  <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-envelope-at-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                        <span class="fontLightTheme accordionTitle">E-mail Application</span>
+                    </button>
+                  </h2>
+                  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Components</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Permissions</a>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-chat-dots-fill me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Chat</span>
+                      </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">User Application</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Extra Content</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Permissions</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTen">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-images me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Photo Gallery</span>
+                      </button>
+                    </h2>
+                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Components</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Information</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">User Application</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Extra Content</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Permissions</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEleven">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-bag-x me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Checkout Page</span>
+                      </button>
+                    </h2>
+                    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Components</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Information</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwelve">
+                      <button class="accordion-button collapsed shadow-none accordionBtnLight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-clipboard-check me-3" style="font-size: 1.2rem; color: #7c8db5;"></i>
+                            <span class="fontLightTheme accordionTitle">Authentication</span>
+                      </button>
+                    </h2>
+                    <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                      <div class="accordion-body sidebarItemBody">
+                        <ul class="list-group">
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Components</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">Information</a>
+                          <a href="#" class="list-group-item border-0 lightTheme fontLightTheme">User Application</a>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard dashboardLight vh-100" style="overflow-y: scroll;">
+        <div class="backDrop" style="display: none; opacity: 0; z-index: 5;"></div>
+        
+        <div class="dashboardTitle p-0">
+          <h3 class="dashboardFontLight ps-4 pb-5 mb-0 dashboardTitle" style="margin-left: 0.5rem;">Profile Statistics</h3>
+        </div>
+
+        <i class="bi bi-list fontLightTheme menuOpener d-block d-xl-none"></i>
+
+        <div class="dashboardContent d-block d-lg-flex">
+            <div class="dashboardContentLeft ps-4 pe-4 pe-lg-0">
+                <div class="container-fluid m-0">
+                    <div class="row">
+                        <div class="col d-flex lightTheme rounded p-4 mx-2 mb-2 align-items-center">
+                            <div class="profViewsImg rounded d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; background-color: #9694ff;"> <i class="bi bi-eye-fill d-flex align-items-center" style="color: #fff; font-size: 25px;"></i> </div>
+                            <div class="topContentColText ps-3">
+                                <span style="color: #7281a0; font-weight: 600;">Profile Views</span>
+                                <span class="dashboardFontLight d-block" style="font-weight: 600;">145.000</span>
+                            </div>
+                        </div>
+                        <div class="col d-flex lightTheme rounded p-4 mx-2 mb-2 align-items-center">
+                            <div class="profViewsImg rounded d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; background-color: #57caeb;"> <i class="bi bi-person-fill d-flex align-items-center" style="color: #fff; font-size: 25px;"></i> </div>
+                            <div class="topContentColText ps-3">
+                                <span style="color: #7281a0; font-weight: 600;">Followers</span>
+                                <span class="dashboardFontLight d-block" style="font-weight: 600;">185.000</span>
+                            </div>
+                        </div>
+                        <div class="col d-flex lightTheme rounded p-4 mx-2 mb-2 align-items-center">
+                            <div class="profViewsImg rounded d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; background-color: #5ddab4;"> <i class="bi bi-person-plus-fill d-flex align-items-center" style="color: #fff; font-size: 25px;"></i> </div>
+                            <div class="topContentColText ps-3">
+                                <span style="color: #7281a0; font-weight: 600;">Following</span>
+                                <span class="dashboardFontLight d-block" style="font-weight: 600;">45.000</span>
+                            </div>
+                        </div>
+                        <div class="col d-flex lightTheme rounded p-4 mx-2 mb-2 align-items-center">
+                            <div class="profViewsImg rounded d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; background-color: #ff7976;"> <i class="bi bi-bookmark-check-fill d-flex align-items-center" style="color: #fff; font-size: 25px;"></i> </div>
+                            <div class="topContentColText ps-3">
+                                <span style="color: #7281a0; font-weight: 600;">Saved Posts</span>
+                                <span class="dashboardFontLight d-block" style="font-weight: 600;">450</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid mt-4">
+                    <div class="row">
+                        <div class="col lightTheme rounded px-4 py-4 mx-2 mb-2">
+                            <h5 class="dashboardFontLight">Profile Visit</h5>
+                            <div class="graph01"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid my-4">
+                  <div class="row">
+                    <div class="col-12 col-lg-4" style="padding: 0px 8px 0px 8px;">
+                      <div class="lightTheme rounded px-4 py-4 mb-2">
+                        <h5 class="dashboardFontLight mb-3">Profile Visitors</h5>
+                        <div class="graph02"></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-8 mt-4 mt-lg-0" style="padding: 0px 8px 0px 8px;">
+                      <div class="lightTheme rounded px-4 py-4 mb-2" style="overflow-x: scroll;">
+                        <h5 class="dashboardFontLight mb-3">Latest Comments</h5>
+
+                        <table class="commentsSectionTable">
+                          <thead class="dashboardFontLight">
+                            <tr class="border-bottom">
+                              <th style="min-width: 150px;">Name</th>
+                              <th>Comment</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="border-bottom">
+                              <td class="dashboardFontLight d-flex align-items-center py-4 ps-2">
+                                <img src="assets/icons/1.jpg" alt="Profile Picture" class="img-fluid rounded rounded-circle" style="width: 50px; height: 50px;">
+                                <h6 class="mb-0 ms-2">Joel</h6>
+                              </td>
+                              <td class="fontLightTheme w-100">Wow amazing design! Can you make another tutorial for this design?</td>
+                            </tr>
+                            <tr class="border-bottom">
+                              <td class="dashboardFontLight d-flex align-items-center py-4 ps-2">
+                                <img src="assets/icons/3.jpg" alt="Profile Picture" class="img-fluid rounded rounded-circle" style="width: 50px; height: 50px;">
+                                <h6 class="mb-0 ms-2">Ellie</h6>
+                              </td>
+                              <td class="fontLightTheme w-100">Congratulations on your graduation!</td>
+                            </tr>
+                            <tr class="border-bottom">
+                              <td class="dashboardFontLight d-flex align-items-center py-4 ps-2">
+                                <img src="assets/icons/4.jpg" alt="Profile Picture" class="img-fluid rounded rounded-circle" style="width: 50px; height: 50px;">
+                                <h6 class="mb-0 ms-2">Abby</h6>
+                              </td>
+                              <td class="fontLightTheme w-100">Your confidence inspires me to be more confident in myself.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="dashboardContentRight ps-4 ps-lg-0 pe-4 pe-lg-0">
+              <div class="row mx-2 mx-lg-3 mb-4 mt-4 mt-lg-0">
+                <div class="col d-flex lightTheme rounded ps-4 align-items-center" style="min-height: 98px;">
+                  <img src="assets/icons/1.jpg" alt="Profile Picture" class="img-fluid rounded rounded-circle" style="width: 60px; height: 60px;">
+                  <div class="topContentColText ps-3">
+                      <span style="font-weight: 600; font-size: 1.3rem;" class="dashboardFontLight">John Wick</span>
+                      <span class="d-block" style="font-weight: 700; color: #72819f;">@johnwick</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row mx-2 mx-lg-3 mb-2">
+                <div class="col lightTheme rounded px-4 py-4" style="min-height: 98px;">
+                  <h5 class="dashboardFontLight pb-4">Recent Messages</h5>
+                    <div class="d-flex pb-4 align-items-center">
+                      <img src="assets/icons/3.jpg" alt="Profile Picture" class="img-fluid rounded rounded-circle" style="width: 60px; height: 60px;">
+                      <div class="topContentColText ps-3">
+                          <span style="font-weight: 600; font-size: 1.3rem;" class="dashboardFontLight">Tommy Miller</span>
+                          <span class="d-block" style="font-weight: 700; color: #72819f;">@tommy123</span>
+                      </div>
+                    </div>
+                    <div class="d-flex pb-4 align-items-center">
+                      <img src="assets/icons/2.jpg" alt="Profile Picture" class="img-fluid rounded rounded-circle" style="width: 60px; height: 60px;">
+                      <div class="topContentColText ps-3">
+                          <span style="font-weight: 600; font-size: 1.3rem;" class="dashboardFontLight">Dave Smith</span>
+                          <span class="d-block" style="font-weight: 700; color: #72819f;">@dave_</span>
+                      </div>
+                    </div>
+                    <div class="d-flex pb-4 align-items-center">
+                      <img src="assets/icons/4.jpg" alt="Profile Picture" class="img-fluid rounded rounded-circle" style="width: 60px; height: 60px;">
+                      <div class="topContentColText ps-3">
+                          <span style="font-weight: 600; font-size: 1.3rem;" class="dashboardFontLight">Edward Lee</span>
+                          <span class="d-block" style="font-weight: 700; color: #72819f;">@ed_lee</span>
+                      </div>
+                    </div>
+                    <button class="btn btn-outline-primary w-100 p-2">Start Conversation</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="d-block text-center d-sm-flex justify-content-between fontLightTheme px-4 py-3">
+          <p>Baseado em um template de <a href="https://saugi.me/" target="_blank" class="text-decoration-none">Saugi</a></p>
+          <p>2023 © <a href="https://github.com/vinicius-koga" target="_blank" class="text-decoration-none">Vinícius Koga</a></p>
+        </div>
+    </main>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

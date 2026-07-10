@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    font-family: 'Inter';
+    font-size: 1.7rem;
+    background-color: #141414;
+    color: #fff;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    padding: 4rem 0;
+    position: sticky;
+    top: 0;
+    background-color: #141414;
+    z-index: 1;
+}
+
+.logo a {
+    font-family: 'Calistoga';
+    font-size: 3.6rem;
+    color: #fff;
+    text-decoration: none;
+}
+.logo span {
+    color: #FE6A0F;
+}
+
+header .container {
+    display: flex;
+    gap: 5rem;
+}
+
+header nav {
+    display: flex;
+    flex: 1;
+}
+header nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+header nav a:hover {
+    color: #fff;
+}
+header nav .leftside a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    position: absolute;
+    transform: scaleX(0);
+    transition: all 0.3s ease 0s;
+}
+header nav .leftside a:hover::after {
+    transform: scaleX(-1);
+}
+header nav .leftside a.selected {
+    color: #fff;
+}
+header nav .leftside a.selected::after {
+    transform: scaleX(-1);
+}
+header nav .leftside {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 4rem;
+}
+
+header nav .rightside {
+    display: flex;
+    align-items: center;
+}
+header nav .button {
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1.3rem 4.5rem;
+}
+header nav .button:hover,
+header nav .button:active {
+    color: #fff;
+    border-color: #fff;
+}
+
+header .menu {
+    display: none;
+    flex: 1;
+    justify-content: end;
+    align-items: center;
+}
+header .menu-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+header .menu-icon div {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+/* HERO AREA */
+.hero .container {
+    display: flex;
+}
+
+.hero .leftside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+.hero .leftside h1 {
+    font-family: 'Calistoga';
+    font-size: 7rem;
+    line-height: 7.6rem;
+}
+.hero .leftside p {
+    font-size: 2rem;
+}
+.hero .leftside .button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FE6A0F;
+    font-weight: 500;
+    padding: 1.5rem 8rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+.hero .leftside .button:hover {
+    transform: scale(1.03);
+}
+
+.hero .rightside {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.hero .rightside img {
+    width: 400px;
+    transform: translateY(55px);
+}
+
+/* SEARCH */
+.search {
+    background-color: #1f1f1f;
+    padding: 40px 0;
+}
+.search .search-title {
+    font-size: 3rem;
+    margin-bottom: 45px;
+}
+
+.search .search-sides {
+    display: flex;
+    gap: 20vw;
+}
+
+.search-sides .leftside,
+.search-sides .rightside {
+    flex: 1;
+}
+
+.search-sides .leftside input,
+.search-sides .rightside select {
+    width: 100%;
+    background-color: #2b2b2b;
+    border: 0;
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: #979797;
+    outline: none;
+    border-radius: 5px;
+}
+
+.search-sides .leftside input {
+    background-image: url(./searchIcon.png);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    padding-left: 60px;
+}
+
+.search-sides .rightside select {
+    border-right: 20px solid transparent;
+    cursor: pointer;
+}
+
+.search-sides .rightside select {
+    width: 100%;
+}
+
+/* PRODUCTS */
+main .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
+    padding: 50px 0;
+}
+
+main a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+main a:hover {
+    transform: scale(1.02);
+}
+
+main .product {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    position: relative;
+}
+
+main .p-tooltip {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #FE6A0F;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+main .p-picture {
+    display: flex;
+    justify-content: center;
+    background-color: #2b2b2b;
+    border-radius: 10px 10px 0 0;
+}
+
+main .p-info {
+    padding: 30px;
+}
+
+main .p-info div {
+    margin-bottom: 10px;
+}
+
+main .p-info div:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+main .p-info .p-name {
+    font-family: 'Calistoga';
+    font-size: 3.2rem;
+}
+
+main .p-info .p-price {
+    color: #FE6A0F;
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1f1f1f;
+    padding: 40px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .rightside {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1230px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 820px) {
+    header nav {
+        display: none;
+    }
+
+    header .menu {
+        display: flex;
+    }
+
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero .leftside {
+        text-align: center;
+        align-items: center;
+        margin: 5rem 0 0 0 ;
+    }
+
+    .hero .rightside img {
+        width: 280px;
+    }
+
+    .hero .leftside h1 {
+        font-size: 6rem;
+        line-height: 1;
+    }
+
+    .search .search-sides {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .search .search-title {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero .leftside h1 {
+        font-size: 4rem;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
