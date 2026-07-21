@@ -7,7 +7,8 @@ btn.addEventListener('click', () => {
 
 async function loadPosts() {
     const req = await fetch('https://jsonplaceholder.typicode.com/posts');
-    const reqObj = await req.json();
+    const reqStr = await req.text();
+    const reqObj = await JSON.parse(reqStr);
 
     for(const item of reqObj) {
         body.insertAdjacentHTML('beforeend', `
